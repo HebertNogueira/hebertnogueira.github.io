@@ -31,7 +31,7 @@ hr {
 }
 
 button {
-    background: #2563eb;
+    background: #151515;
     color: #ffffff;
     border: none;
     padding: 12px 35px;
@@ -41,12 +41,12 @@ button {
 }
 
 button:disabled, button:hover:disabled {
-    background: #0b2253;
+    background: #151515;
     cursor: default;
 }
 
 button:hover {
-    background: #1d4ed8;
+    background: #151515;
 }
 
 .main-layout {
@@ -67,10 +67,10 @@ button:hover {
 }
 
 #console {
-    float: right;
-    width: 70%;
+    width: 90%;
+    margin: 0 auto;
+    float: none;
     background: #000000;
-    color: #00ff00;
     font-size: 14px;
     padding: 15px;
     text-align: left;
@@ -78,6 +78,20 @@ button:hover {
     overflow-y: scroll;
     word-wrap: break-word;
     border: 1px solid #222222;
+
+    /* Aplica o gradiente Rainbow no texto */
+    background-image: linear-gradient(
+        to bottom, 
+        #ff0000, 
+        #ff7f00, 
+        #ffff00, 
+        #00ff00, 
+        #0000ff, 
+        #4b0082, 
+        #9400d3
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #kernel-options {
@@ -102,3 +116,33 @@ input[type="radio"]:checked {
 .mt-2{
     margin-top: 2rem;
 }
+
+.rainbow-letter {
+    font-size: 28px;
+    font-family: monospace;
+    padding: 10px;
+}
+
+.rainbow-letter span:nth-child(1)  { color: hsl(0, 100%, 50%); }
+.rainbow-letter span:nth-child(2)  { color: hsl(3, 100%, 50%); }
+.rainbow-letter span:nth-child(3)  { color: hsl(5, 100%, 50%); }
+.rainbow-letter span:nth-child(4)  { color: hsl(8, 100%, 50%); }
+.rainbow-letter span:nth-child(5)  { color: hsl(11, 100%, 50%); }
+.rainbow-letter span:nth-child(6)  { color: hsl(14, 100%, 50%); }
+.rainbow-letter span:nth-child(7)  { color: hsl(16, 100%, 50%); }
+.rainbow-letter span:nth-child(8)  { color: hsl(19, 100%, 50%); }
+.rainbow-letter span:nth-child(9)  { color: hsl(22, 100%, 50%); }
+.rainbow-letter span:nth-child(10) { color: hsl(25, 100%, 50%); }
+.rainbow-letter span:nth-child(11) { color: hsl(27, 100%, 50%); }
+.rainbow-letter span:nth-child(12) { color: hsl(30, 100%, 50%); }
+.rainbow-letter span:nth-child(13) { color: hsl(33, 100%, 50%); }
+.rainbow-letter span:nth-child(14) { color: hsl(35, 100%, 50%); }
+.rainbow-letter span:nth-child(15) { color: hsl(38, 100%, 50%); }
+.rainbow-letter span:nth-child(16) { color: hsl(41, 100%, 50%); }
+.rainbow-letter span:nth-child(17) { color: hsl(44, 100%, 50%); }
+.rainbow-letter span:nth-child(18) { color: hsl(46, 100%, 50%); }
+.rainbow-letter span:nth-child(19) { color: hsl(49, 100%, 50%); }
+.rainbow-letter span:nth-child(20) { color: hsl(52, 100%, 50%); }
+.rainbow-letter span:nth-child(21) { color: hsl(55, 100%, 50%); }
+.rainbow-letter span:nth-child(22) { color: hsl(57, 100%, 50%); }
+.rainbow-letter span:nth-child(23) { color: hsl(60, 100%, 50%); }
